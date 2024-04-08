@@ -4,8 +4,8 @@ import { data } from './data/data'
 function App() {
   return (
     <>
+      <h1>Keywords for the new Google Calendar</h1>
       <div className='divContainer'>
-        <h1>Keywords for the new Google Calendar</h1>
         {
           data.map(item => (
             <div key={item.name} className='dataContainer'>
