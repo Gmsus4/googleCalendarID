@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.divContainer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  margin-bottom: 0;
+}
+
+.dataContainer{
+  width: 100%;
+  background-color: cadetblue;
+  border-radius: 30px;
+  height: 330px;
+  overflow: hidden;
+  display: flex;  /* Esto funciono xd */
+  flex-direction: column; /* Esto funciono xd */
+}
+
+.dataContainer p{
+  text-align: left;
+  margin-left: 30px;
+  /* width: 200px; */ /* Ancho deseado para el contenedor */
+  /* overflow: hidden; */ /* Oculta el contenido que exceda el ancho */
+  /* white-space: nowrap; */ /* Evita que el texto se divida en varias líneas */
+  /* text-overflow: ellipsis; */ /* Agrega puntos suspensivos al texto truncado */
+}
+
+.dataContainer img{
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  align-self: flex-end;  /* Esto funciono xd */
+}
+
+footer{
+  margin-top: 30px;
+}
+
+@media (max-width: 1320px) {
+  .divContainer{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .dataContainer{
+    height: 100%;
+  }
+
+  .dataContainer h2{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  #root {
+    padding: 0.5rem;
+  }
+}
